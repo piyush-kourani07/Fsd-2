@@ -1,0 +1,25 @@
+<!-- Write a script to define 2 json object name div1 & div2 having an array to store ame of student,atlast
+     both div object should be visible with concation and alphabetical sorted -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var test ={
+            "div1":{"name":["a","b","c"]},
+            "div2":{"name":["e","d","f"]}
+        }
+        
+      const div_data=test.div1.name  
+      const div_data1=test.div2.name 
+      
+      var combine_data= div_data.concat(div_data1).sort()
+      document.write(combine_data)
+    </script>
+</body>
+</html>

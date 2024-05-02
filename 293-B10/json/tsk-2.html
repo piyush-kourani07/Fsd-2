@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myobj = '{ "name":"piyush","age":19,"dob":"07-12-2004"}'
+        console.log(myobj.dob)
+        a=new Date(myobj.dob)
+        console.log(a)
+
+        const myobj1 = JSON.parse('{ "name":"piyush","age":19,"dob":"07-12-2004"}')
+        console.log(myobj1.dob)
+        a=new Date(myobj1.dob)
+        console.log(a)
+    </script>
+</body>
+</html>
