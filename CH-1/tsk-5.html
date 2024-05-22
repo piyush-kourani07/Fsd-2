@@ -1,0 +1,35 @@
+<!-- write a json obect which content array of 3 object,each object contain 2 property name & age now sort an array value
+by age in descending order print name and age as per sorted age .. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = [
+            {name:"piyush",age:19},
+            {name:"abc",age:22},
+            {name:"def",age:25}
+        ]
+
+        for (let x=0; x<student.length;x++){
+            for(let y=0;y<student.length;y++){
+                if(student[x].age >student[y].age ){
+                    var temp ;
+                    temp=student[y]
+                    student[y]=student[x]
+                    student[x]=temp
+
+                }
+            }
+        }
+        for(i=0;i<student.length;i++){
+            console.log(student[i].name,student[i].age)
+        }
+    </script>
+</body>
+</html>

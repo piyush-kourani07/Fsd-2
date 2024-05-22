@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <p id="demo">welcome</p>
+    <script >
+        const myobj = {
+            name:"piyush",age:19,city:"amd",phone:[1,2,3]
+        };
+
+        document.getElementById("demo").innerHTML="welcome "+myobj.name + " age is " +myobj.age + " city "+myobj.city + " phone-no is "+myobj.phone[2]
+        
+
+    </script>
+</head>
+<body>
+    <script>
+      const sub = {
+        "fsd":[
+            {
+                "topic":"html",
+                "course":"fsd-2",
+                "content":["tags","table","tom"]
+            },
+            {
+                "topic":"css",
+                "course":"fsd-2",
+                "content":["tags","table","tom"]
+            }
+        ]
+      };
+
+      for(x1 of sub.fsd){
+        document.write(x1.topic + "<br>")
+        document.write(x1.course + "<br>")
+        document.write(x1.content+"<br>")
+      };
+
+    for (x in sub.fsd){
+        for(y in sub.fsd[x]){
+            document.write(sub.fsd[x][y]+"<br>")
+        }
+    }
+    </script>
+</body>
+</html>

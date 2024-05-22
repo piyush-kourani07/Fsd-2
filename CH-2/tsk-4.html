@@ -1,0 +1,27 @@
+<!-- wap to increase the font size at inter val of 1s and it should be stop incresing whent font size reach to 50px .This tsk should be perform when u click on increse button on browser. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hello</p>
+    <button onclick="myfun">Insert</button>
+    <script>
+      font=15
+      function fun(font){
+        document.getElementById("demo").style.fontSize=font;
+      } 
+        function myfun(){
+         setInterval(
+            function(){
+                if(font<=50){
+                    fun(font++);
+                }
+            },1000);
+        }
+    </script>
+</body>
+</html>
