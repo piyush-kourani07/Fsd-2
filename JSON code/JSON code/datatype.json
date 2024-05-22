@@ -1,0 +1,11 @@
+{
+    "name":"XYZ",
+    "marks":23,
+    "date":"23-12-1",
+    "course":["dart","ghj","hgf"],
+    "address":{
+        "city":"dbh",
+        "area":"bhdjx"
+    },
+    "dob":null
+}

@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <div id="myid"></div>
+    <script>
+    var obj=`{"name":"ZMP","dob":"2023-4-10"}`;
+    var data=JSON.parse(obj);
+    //data.dob=new Date(data.dob);
+    document.getElementById("myid").innerHTML="Name:"+data.name+ "DOB="+data.dob;
+    </script>
+    </body>
+</html>

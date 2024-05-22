@@ -1,0 +1,33 @@
+Write a script to define two JSON objects named as “division1” and “division2” having an 
+array to store names of students. These name should be sorted alphabetically in the object 
+ At last, both division objects should be visible with names sorted alphabetically in one array.
+
+
+<html>
+    <body>
+   <script>
+     // Define division1 object with student names
+  const division1 = {
+  name: 'Division 1',
+  students: ['John', 'Alice', 'Bob', 'Eve']
+};
+
+// Define division2 object with student names
+  const division2 = {
+  name: 'Division 2',
+  students: ['Frank', 'Grace', 'David', 'Cathy']
+};
+
+// Sort student names alphabetically within each division
+division1.students.sort();
+division2.students.sort();
+
+// Combine sorted arrays into one sorted array
+const allStudents = division1.students.concat(division2.students).sort();
+//allStudents.sort();
+
+// Output sorted array to console
+console.log(allStudents);
+   </script>
+    </body>
+</html>

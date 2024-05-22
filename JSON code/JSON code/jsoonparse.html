@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>json.parse </h2>
+        <div id="myid"></div>
+        <script>
+         var obj=`{
+    "name":"XYZ",
+    "marks":23,
+    "date":"23-12-1",
+    "course":["dart","ghj","hgf","zmp"],
+    "dob":null
+}`;
+var data=JSON.parse(obj);
+var name=data.name;
+var course1=data.course[1];
+console.log(name); 
+document.getElementById("myid").innerHTML= "Name="+name+ "Course="+course1;
+document.write("Name="+name);
+
+        </script>
+    </body>
+</html>

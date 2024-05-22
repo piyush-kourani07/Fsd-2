@@ -1,0 +1,31 @@
+<html>
+    <body>
+       
+        <div id="Myid">
+
+        </div>
+        <script>
+        var obj={
+    "name":"XYZ",
+    "marks":23,
+    "date":"23-12-1",
+    "course":["dart","ghj","hgf","zmp"],
+    "dob":null
+};
+
+var x="";
+obj.course[0]="PHP";//modify  index value
+delete obj.course[1];//delete index value
+obj.name="ABC";  //modify key value
+delete obj.name;
+for(var i=0;i<obj.course.length;i++)
+{
+    x+=obj.course[i]+"<br>"
+}
+document.getElementById("Myid").innerHTML=x;
+document.getElementById("Myid").innerHTML="name:"+obj.name+"<br>";
+
+
+           </script> 
+    </body>
+</html>

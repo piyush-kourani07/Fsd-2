@@ -1,0 +1,55 @@
+Write a JSON object which contains array of 3 objects. Each object contains 2 properties 
+name and age. Now, sort an array values by age in descending order. Print name in terminal 
+as per the sorted age.
+
+
+<html>
+    <body>
+        <script>
+//         const student = 
+//         [ {
+//         name: "ZMP",
+//         height: 5.7
+//         },
+//         {
+//         name: "SPP",
+//         height: 6.0
+//         },
+//         {
+//         name: "XYZ",
+//         height: 6.2
+//         }
+//         ] 
+//         for (let x = 0; x < student.length; x++){
+//         for (let y = 0; y < student.length; y++){
+//         if (student[x].height > student[y].height) {
+//         var temp;
+//         temp = student[y];
+//         student[y] = student[x];
+//         student[x] = temp;
+//         } 
+//     }
+//  }
+//         for (let i = 0; i < student.length; i++){
+//         console.log(student[i].name, student[i].height); 
+//         }
+
+
+        //or second method
+        const students = {
+    "studentsArray": [
+    { "name": "Alice", "age": 20 },
+    { "name": "Bob", "age": 18 },
+    { "name": "Charlie", "age": 22 }
+  ]
+};
+// Sort the array by age in descending order
+students.studentsArray.sort((a, b) => b.age - a.age);
+
+// Print names in terminal as per sorted age
+for (let i = 0; i < students.studentsArray.length; i++) {
+  console.log(students.studentsArray[i].name);
+}
+    </script>
+    </body>
+</html>

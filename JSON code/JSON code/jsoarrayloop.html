@@ -1,0 +1,26 @@
+<html>
+    <body>
+       
+        <div id="Myid">
+
+        </div>
+        <script>
+        var obj={
+    "name":"XYZ",
+    "marks":23,
+    "date":"23-12-1",
+    "course":["dart","ghj","hgf","zmp"],
+    "dob":null
+};
+
+var x="";
+for(var i in obj.course)
+{
+    x+=obj.course[i]+"<br>"
+}
+document.getElementById("Myid").innerHTML=x;
+
+
+           </script>
+    </body>
+</html>

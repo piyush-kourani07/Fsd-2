@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <p>Accessing JSON object  value using (.) notation</p>
+        <div id="Myid">
+
+        </div>
+        <script>
+        var obj={
+    "name":"XYZ",
+    "marks":23,
+    "date":"23-12-1",
+    "address":{
+        "city":"dbh",
+        "area":"bhdjx"
+    },
+    "dob":null
+};
+
+c1=obj.address.city;
+c2=obj.address.area;
+document.getElementById("Myid").innerHTML=c1+  "," +c2;
+
+
+
+           </script>
+    </body>
+</html>
